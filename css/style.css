@@ -24,11 +24,13 @@ h1,
 h2,
 h3 {
 	font-family: var(--heading);
+	margin-bottom: 0;
 }
 h4,
 h5,
 h6 {
 	font-family: var(--body);
+	margin-bottom: 0;
 }
 P {
 	margin-bottom: 0;
@@ -43,7 +45,7 @@ body {
 }
 .container {
 	max-width: 1800px;
-	padding: 60px 25px;
+	padding: 50px 150px;
 }
 .mht-img {
 	width: 100%;
@@ -51,11 +53,37 @@ body {
 }
 
 /** Header **/
+header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+}
+header.fixed-top {
+	background: var(--textWhite);
+	animation: 1.2s ease-in-out 0s normal none 1 running headerdown;
+}
+@keyframes headerdown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+	}
+}
+header.fixed-top .navbar {
+	padding: 0;
+}
 header .container {
 	padding: 3px 25px;
 }
 header .navbar-brand img {
-	width: 200px;
+	width: 240px;
 }
 header .navbar-collapse {
 	align-items: normal;
@@ -100,7 +128,6 @@ header .offcanvas .navbar-nav .nav-item.dropdown i {
 	position: absolute;
 	top: 11px;
 	right: -8px;
-	transition: 0.2s all;
 }
 header .offcanvas .navbar-nav .nav-item.dropdown i:hover {
 	color: var(--primary);
@@ -131,4 +158,67 @@ header .offcanvas .offcanvas-header h5 {
 header .offcanvas .offcanvas-header i {
 	font-size: 1.7rem;
 	cursor: pointer;
+}
+
+/** Home **/
+
+/* Hero Banner */
+.hero-banner .container {
+	padding-top: 40px;
+}
+.hero-banner .hero-banner-display {
+	height: 100%;
+}
+.hero-banner .hero-banner-wrapper .col-md-6:last-child {
+	background: rgba(255, 255, 255, 0.8) url(../images/hero-banner-bg.png)
+		no-repeat left/contain;
+	background-blend-mode: lighten;
+	margin-top: 80px;
+}
+.hero-banner .hero-banner-content h1 {
+	line-height: 4rem;
+	font-size: 4rem;
+	font-weight: 700;
+	background: var(--gradient);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.hero-banner .hero-banner-content p {
+	font-weight: 500;
+	color: var(--text);
+	opacity: 0.75;
+	margin: 10px 20% 25px 0;
+}
+.hero-banner .hero-banner-content form {
+	width: 70%;
+	margin-bottom: 35px;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 8px;
+}
+.hero-banner .hero-banner-content form .form-control {
+	padding: 12px;
+	border: none;
+}
+.hero-banner .hero-banner-content form .form-control:focus {
+	box-shadow: 0 0 0 0.25rem rgba(243, 155, 80, 0.25);
+}
+.hero-banner .hero-banner-content form .btn {
+	position: absolute;
+	font-family: var(--heading);
+	font-weight: 700;
+	color: var(--textWhite);
+	background: var(--text);
+	padding: 7px 18px;
+	border-radius: 5px;
+	top: 4px;
+	right: 4px;
+}
+.hero-banner .hero-banner-content .banner-contact img {
+	width: 48px;
+	aspect-ratio: 1/1;
+	margin-right: 15px;
+}
+.hero-banner .hero-banner-content .banner-contact h5 {
+	font-weight: 600;
+	color: var(--text);
 }
