@@ -89,6 +89,16 @@
 	.partners .partners-wrapper {
 		margin: 0;
 	}
+	.what-we-do .what-we-do-content {
+		margin-bottom: 50px;
+	}
+	.why-choose-us .why-choose-us-wrapper .col-lg-6:first-child {
+		order: 2;
+	}
+	.why-choose-us .why-choose-us-display {
+		height: 320px;
+		margin-bottom: 40px;
+	}
 }
 
 @media (max-width: 800px) {
@@ -169,6 +179,14 @@
 	.partners img {
 		width: 100px;
 	}
+	.experience .experience-display {
+		height: 250px;
+		margin-bottom: 40px;
+	}
+	.why-choose-us .why-choose-us-display {
+		height: 250px;
+		margin-bottom: 30px;
+	}
 }
 
 @media (max-width: 575px) {
@@ -204,6 +222,31 @@
 	.partners .partners-wrapper {
 		grid-template-columns: repeat(3, auto);
 		row-gap: 20px;
+	}
+	.what-we-do .what-we-do-content {
+		margin: 0 0 40px 0 !important;
+	}
+	.what-we-do .what-we-do-content h6,
+	.what-we-do .what-we-do-content p,
+	.what-we-do .what-we-do-content .btn,
+	.experience .experience-content h6,
+	.experience .experience-content p,
+	.experience .experience-content .btn,
+	.why-choose-us .why-choose-us-content p {
+		font-size: 0.9rem;
+	}
+	.what-we-do .what-we-do-content h2,
+	.experience .experience-content h2,
+	.why-choose-us .why-choose-us-content h2 {
+		font-size: 1.5rem;
+	}
+	.experience .experience-display {
+		height: 200px;
+		margin-bottom: 25px;
+	}
+	.why-choose-us .why-choose-us-display {
+		height: 200px;
+		margin-bottom: 25px;
 	}
 }
 
@@ -254,5 +297,23 @@
 	.partners img {
 		width: 80px;
 		height: 40px;
+	}
+	.what-we-do .what-we-do-content h2,
+	.experience .experience-content h2 {
+		font-size: 1.25rem;
+	}
+	.services .services-content img {
+		width: 58px;
+	}
+	.services .services-content h4 {
+		font-size: 1.15rem;
+	}
+	.experience .experience-display {
+		height: 170px;
+		margin-bottom: 15px;
+	}
+	.why-choose-us .why-choose-us-display {
+		height: 170px;
+		margin-bottom: 15px;
 	}
 }
