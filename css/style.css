@@ -67,6 +67,7 @@ header {
 }
 header.fixed-top {
 	background: var(--textWhite);
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 	animation: 1.2s ease-in-out 0s normal none 1 running headerdown;
 }
 @keyframes headerdown {
@@ -116,14 +117,16 @@ header .offcanvas .navbar-nav .nav-item .nav-link:hover ~ i {
 	-webkit-text-fill-color: transparent;
 }
 header .offcanvas .navbar-nav .nav-item:last-child .nav-link,
-.what-we-do .what-we-do-content .btn {
+.what-we-do .what-we-do-content .btn,
+.free-analysis .free-analysis-form form .btn {
 	color: var(--textWhite);
 	background: var(--gradient);
 	padding: 7px 20px;
 	border-radius: 5px;
 }
 header .offcanvas .navbar-nav .nav-item:last-child .nav-link:hover,
-.what-we-do .what-we-do-content .btn:hover {
+.what-we-do .what-we-do-content .btn:hover,
+.free-analysis .free-analysis-form form .btn:hover {
 	-webkit-text-fill-color: inherit;
 	background: linear-gradient(
 		135deg,
@@ -337,23 +340,30 @@ footer .copyright p a {
 
 /* What We Do */
 .what-we-do .what-we-do-content h6,
-.experience .experience-content h6 {
+.experience .experience-content h6,
+.featured-projects .featured-projects-title h6,
+.services .services-title h6 {
 	font-weight: 500;
 	color: var(--primary);
 }
 .what-we-do .what-we-do-content h2,
-.experience .experience-content h2 {
+.experience .experience-content h2,
+.featured-projects .featured-projects-title h2,
+.services .services-title h2,
+.free-analysis .free-analysis-form .free-analysis-form-title h2 {
 	font-weight: 700;
 }
 .what-we-do .what-we-do-content p,
-.experience .experience-content p {
+.experience .experience-content p,
+.free-analysis .free-analysis-form .free-analysis-form-title p {
 	text-align: justify;
 	font-weight: 500;
 	margin: 15px 0 30px;
 	opacity: 0.75;
 }
 .what-we-do .what-we-do-content .btn,
-.experience .experience-content .btn {
+.experience .experience-content .btn,
+.free-analysis .free-analysis-form form .btn {
 	font-weight: 700;
 	padding: 8px 24px;
 	transition: 0.3s all;
@@ -429,7 +439,116 @@ footer .copyright p a {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-.why-choose-us .why-choose-us-content p {
+.why-choose-us .why-choose-us-content p,
+.featured-projects
+	.featured-projects-slider
+	.featured-projects-slider-content
+	p,
+.services .services-content-wrapper .services-content p {
 	font-weight: 500;
 	opacity: 0.75;
+}
+
+/* Featured Projects */
+.featured-projects .container {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+.featured-projects .featured-projects-slider {
+	height: 335px;
+	margin-top: 25px;
+}
+.featured-projects .featured-projects-slider .swiper-wrapper {
+	height: 300px;
+}
+.featured-projects .featured-projects-slider .swiper-slide {
+	position: relative;
+	border-radius: 10px;
+}
+.featured-projects .featured-projects-slider .swiper-slide::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		to top,
+		rgb(15, 25, 26, 0.8),
+		rgb(15, 25, 26, 0.6),
+		rgb(15, 25, 26, 0),
+		rgb(15, 25, 26, 0),
+		rgb(15, 25, 26, 0)
+	);
+	border-radius: 10px;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.featured-projects .featured-projects-slider .swiper-slide img {
+	border-radius: 10px;
+	object-fit: cover !important;
+}
+.featured-projects .featured-projects-slider .featured-projects-slider-content {
+	position: absolute;
+	color: var(--textWhite);
+	padding: 30px;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+}
+.featured-projects
+	.featured-projects-slider
+	.featured-projects-slider-content
+	h6 {
+	font-size: 1.1rem;
+}
+.featured-projects
+	.featured-projects-slider
+	.swiper-pagination-bullet-active-main {
+	background: var(--text);
+}
+
+/* Services */
+.services .services-content-wrapper {
+	margin-top: 25px;
+}
+.services .services-content-wrapper .services-content-title img {
+	margin: 0 10px 0 0;
+}
+.services .services-content-wrapper .services-content p {
+	color: var(--text);
+	margin-top: 15px;
+}
+
+/* Free Analysis */
+.free-analysis .free-analysis-display {
+	background: rgba(255, 255, 255, 0.7) url(../images/anlysis-bg.png) no-repeat
+		center / cover;
+	background-blend-mode: lighten;
+	padding: 50px 0;
+}
+.free-analysis .free-analysis-form {
+	margin-left: 40px;
+}
+.free-analysis .free-analysis-form form .col-sm-6 {
+	margin-bottom: 15px;
+}
+.free-analysis .free-analysis-form form .form-control {
+	border: 0.1em solid rgba(0, 0, 0, 0.4);
+}
+.free-analysis .free-analysis-form form .form-control:hover {
+	border: 0.1em solid var(--primary);
+}
+.free-analysis .free-analysis-form form .form-control:focus {
+	border: 0.1em solid var(--primary);
+	box-shadow: 0 0 0 0.25rem rgba(243, 155, 80, 0.25);
+}
+.free-analysis
+	.free-analysis-form
+	form
+	input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+.free-analysis .free-analysis-form form .btn {
+	width: 40%;
+	margin-top: 15px;
 }
