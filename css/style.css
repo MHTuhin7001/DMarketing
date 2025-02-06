@@ -249,8 +249,10 @@ footer .footer-content-wrapper .col-lg-9 ul li a:hover {
 	padding-left: 10px;
 }
 footer .copyright {
-	padding: 15px;
 	border-top: 1px solid rgba(60, 40, 83, 0.5);
+}
+footer .copyright .container {
+	padding: 15px;
 }
 footer .copyright p {
 	font-size: 0.9rem;
@@ -278,6 +280,7 @@ footer .copyright p a {
 	margin-top: 80px;
 }
 .hero-banner .hero-banner-content h1 {
+	display: inline-block;
 	line-height: 4rem;
 	font-size: 4rem;
 	font-weight: 700;

@@ -221,7 +221,7 @@
 	footer .footer-content-wrapper .col-lg-9 ul {
 		margin-left: 10px;
 	}
-	footer .copyright {
+	footer .copyright .container {
 		flex-direction: column;
 		gap: 3px;
 	}
