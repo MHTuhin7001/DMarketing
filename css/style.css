@@ -568,6 +568,7 @@ footer .copyright p a {
 		rgb(15, 25, 26, 0),
 		rgb(15, 25, 26, 0),
 		rgb(15, 25, 26, 0),
+		rgb(15, 25, 26, 0.5),
 		rgb(15, 25, 26, 0.6),
 		rgb(15, 25, 26, 0.8)
 	);
@@ -581,6 +582,11 @@ footer .copyright p a {
 }
 .blog .blog-content-wrapper .blog-content a {
 	color: var(--textWhite);
+}
+.blog .blog-content-wrapper .blog-content .btn {
+	font-size: 1.15rem;
+	color: var(--textWhite);
+	padding: 0 5px;
 }
 .blog .modal .modal-header h4 {
 	font-family: var(--heading);
@@ -610,6 +616,7 @@ footer .copyright p a {
 	display: inline-grid;
 	width: 48px;
 	height: 48px;
+	margin: 0 7px 15px;
 	border: 1px solid;
 	border-radius: 50%;
 	place-items: center;
@@ -647,44 +654,83 @@ footer .copyright p a {
 	border-color: rgba(255, 87, 0, 0.5);
 }
 .blog .modal .modal-body .blog-modal-share a:nth-child(1):hover {
-	background: rgba(24, 119, 242);
+	background: linear-gradient(
+		180deg,
+		rgba(86, 155, 245, 1) 0%,
+		rgba(24, 119, 242, 1) 50%
+	);
 }
 .blog .modal .modal-body .blog-modal-share a:nth-child(2):hover {
-	background: rgba(20, 23, 26);
+	background: rgb(20, 23, 26);
 }
 .blog .modal .modal-body .blog-modal-share a:nth-child(3):hover {
-	background: rgba(228, 64, 95);
+	background: radial-gradient(
+		circle at 30% 107%,
+		#fdf497 0%,
+		#fdf497 5%,
+		#fd5949 45%,
+		#d6249f 60%,
+		#285aeb 90%
+	);
 }
 .blog .modal .modal-body .blog-modal-share a:nth-child(4):hover {
-	background: rgba(37, 211, 102);
+	background: linear-gradient(
+		180deg,
+		rgba(82, 224, 134, 1) 0%,
+		rgba(37, 211, 102, 1) 50%
+	);
 }
 .blog .modal .modal-body .blog-modal-share a:nth-child(5):hover {
-	background: rgba(36, 161, 222);
+	background: linear-gradient(
+		180deg,
+		rgba(100, 188, 232, 1) 0%,
+		rgba(36, 161, 222, 1) 50%
+	);
 }
 .blog .modal .modal-body .blog-modal-share a:nth-child(6):hover {
-	background: rgba(10, 102, 194);
+	background: rgb(10, 102, 194);
 }
 .blog .modal .modal-body .blog-modal-share a:nth-child(7):hover {
-	background: rgba(255, 87, 0);
+	background: rgb(255, 87, 0);
 }
 .blog .modal .modal-body .blog-modal-share a:nth-child(1) i {
-	color: rgba(24, 119, 242);
+	color: rgb(24, 119, 242);
 }
 .blog .modal .modal-body .blog-modal-share a:nth-child(2) i {
-	color: rgba(20, 23, 26);
+	color: rgb(20, 23, 26);
 }
 .blog .modal .modal-body .blog-modal-share a:nth-child(3) i {
-	color: rgba(228, 64, 95);
+	color: rgb(228, 64, 95);
 }
 .blog .modal .modal-body .blog-modal-share a:nth-child(4) i {
-	color: rgba(37, 211, 102);
+	color: rgb(37, 211, 102);
 }
 .blog .modal .modal-body .blog-modal-share a:nth-child(5) i {
-	color: rgba(36, 161, 222);
+	color: rgb(36, 161, 222);
 }
 .blog .modal .modal-body .blog-modal-share a:nth-child(6) i {
-	color: rgba(10, 102, 194);
+	color: rgb(10, 102, 194);
 }
 .blog .modal .modal-body .blog-modal-share a:nth-child(7) i {
-	color: rgba(255, 87, 0);
+	color: rgb(255, 87, 0);
+}
+.blog .modal .modal-body .blog-modal-copy-link .form-control {
+	padding: 10px 0 10px 40px;
+}
+.blog .modal .modal-body .blog-modal-copy-link .form-control:focus {
+	border-color: #dee2f1;
+	box-shadow: none;
+}
+.blog .modal .modal-body .blog-modal-copy-link i {
+	font-size: 1.25rem;
+	top: 13px;
+	left: 8px;
+}
+.blog .modal .modal-body .blog-modal-copy-link .btn {
+	font-weight: 700;
+	color: var(--textWhite);
+	background: var(--text);
+	padding: 6px 15px;
+	top: 4px;
+	right: 4px;
 }
