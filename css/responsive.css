@@ -15,6 +15,22 @@
 		grid-template-columns: repeat(4, auto);
 		margin: 0 120px;
 	}
+	.about-us .container {
+		padding-top: 100px;
+	}
+	.work-process
+		.work-process-content-wrapper
+		.col-md-3:nth-child(odd)
+		.work-process-content::before {
+		top: 70px;
+		transform: rotate(19.5deg);
+	}
+	.work-process
+		.work-process-content-wrapper
+		.col-md-3:nth-child(even)
+		.work-process-content::before {
+		transform: rotate(-20deg);
+	}
 }
 
 @media (max-width: 1199px) {
@@ -84,7 +100,8 @@
 	footer .footer-content-wrapper .col-lg-9 {
 		margin-top: 20px;
 	}
-	.hero-banner .hero-banner-display {
+	.hero-banner .hero-banner-display,
+	.about-us .about-us-display {
 		height: 400px;
 	}
 	.hero-banner .hero-banner-content h1 {
@@ -123,8 +140,24 @@
 	.free-analysis .free-analysis-form {
 		margin-left: 0;
 	}
+	.about-us .container {
+		padding-top: 120px;
+	}
 	.work-process .work-process-content p {
 		font-size: 0.9rem;
+	}
+	.work-process
+		.work-process-content-wrapper
+		.col-md-3:nth-child(odd)
+		.work-process-content::before {
+		top: 66px;
+		transform: rotate(27.5deg);
+	}
+	.work-process
+		.work-process-content-wrapper
+		.col-md-3:nth-child(even)
+		.work-process-content::before {
+		transform: rotate(-30deg);
 	}
 }
 
@@ -190,7 +223,8 @@
 		width: inherit;
 		border-radius: 0 5px 5px 0;
 	}
-	.hero-banner .hero-banner-display {
+	.hero-banner .hero-banner-display,
+	.about-us .about-us-display {
 		height: 320px;
 	}
 	.hero-banner .hero-banner-content h1 {
@@ -206,8 +240,7 @@
 	.partners img {
 		width: 100px;
 	}
-	.experience .experience-display,
-	.about-us .about-us-display {
+	.experience .experience-display {
 		height: 250px;
 		margin-bottom: 40px;
 	}
@@ -218,10 +251,37 @@
 		padding: 20px 0;
 	}
 	.about-us .container {
-		padding-top: 100px;
+		padding-top: 40px;
 	}
 	.about-us .about-us-wrapper .col-md-6:first-child {
 		order: 2;
+	}
+	.work-process
+		.work-process-content-wrapper
+		.col-md-3:nth-child(odd)
+		.work-process-content::before {
+		top: 75px;
+		transform: rotate(14.5deg);
+	}
+	.work-process
+		.work-process-content-wrapper
+		.col-md-3:nth-child(even)
+		.work-process-content::before {
+		left: -50%;
+		bottom: -14px;
+		transform: rotate(-22deg);
+	}
+	.work-process
+		.work-process-content-wrapper
+		.col-md-3:nth-child(4n + 4)
+		.work-process-content::before {
+		display: inherit;
+	}
+	.work-process
+		.work-process-content-wrapper
+		.col-md-3:last-child
+		.work-process-content::before {
+		display: none;
 	}
 }
 
@@ -239,7 +299,8 @@
 		flex-direction: column;
 		gap: 3px;
 	}
-	.hero-banner .hero-banner-display {
+	.hero-banner .hero-banner-display,
+	.about-us .about-us-display {
 		height: 250px;
 	}
 	.hero-banner .hero-banner-wrapper .col-md-6:last-child {
@@ -297,8 +358,7 @@
 	.work-process .work-process-title h2 {
 		font-size: 1.5rem;
 	}
-	.experience .experience-display,
-	.about-us .about-us-display {
+	.experience .experience-display {
 		height: 200px;
 		margin-bottom: 25px;
 	}
@@ -321,8 +381,23 @@
 		background-position: left 25px top 35px;
 		padding-left: 70px;
 	}
-	.about-us .container {
-		padding-top: 80px;
+	.work-process .work-process-content::before {
+		display: none !important;
+	}
+	.work-process .work-process-content-wrapper {
+		margin-top: 40px;
+	}
+	.work-process .work-process-content {
+		margin-bottom: 24px;
+	}
+	.work-process .work-process-content .work-process-icon {
+		margin: 0 0 15px 0 !important;
+	}
+	.work-process
+		.work-process-content-wrapper
+		.col-md-3:nth-child(even)
+		.work-process-icon {
+		order: inherit;
 	}
 }
 
@@ -347,7 +422,8 @@
 	footer .footer-content-wrapper .col-lg-9 ul li a {
 		font-size: 0.95rem;
 	}
-	.hero-banner .hero-banner-display {
+	.hero-banner .hero-banner-display,
+	.about-us .about-us-display {
 		height: 220px;
 	}
 	.hero-banner .hero-banner-wrapper .col-md-6:last-child {
@@ -392,8 +468,7 @@
 	.services .services-content h4 {
 		font-size: 1.15rem;
 	}
-	.experience .experience-display,
-	.about-us .about-us-display {
+	.experience .experience-display {
 		height: 170px;
 		margin-bottom: 15px;
 	}
