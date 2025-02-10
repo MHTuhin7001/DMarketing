@@ -92,7 +92,12 @@
 									</ul>
 								</li>
 								<li class="nav-item">
-									<a href="blog.html" class="nav-link"
+									<a class="nav-link" href="projects.html"
+										>Projects</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="blogs.html" class="nav-link"
 										>Blog</a
 									>
 								</li>
@@ -232,7 +237,9 @@
 								grow your audience and achieve measurable
 								results.
 							</p>
-							<a href="#" class="btn">Discover More</a>
+							<a href="services.html" class="btn"
+								>Discover More</a
+							>
 						</div>
 					</div>
 					<div class="col-lg-6">
@@ -344,7 +351,7 @@
 									</div>
 								</div>
 							</div>
-							<a href="" class="btn">Discover More</a>
+							<a href="about.html" class="btn">Discover More</a>
 						</div>
 					</div>
 				</div>
@@ -646,6 +653,133 @@
 									</p>
 								</div></a
 							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Featured Testimonials -->
+		<section class="featured-testimonials testimonials">
+			<div class="container">
+				<div class="row featured-testimonials-wrapper">
+					<div class="col-lg-5">
+						<div class="featured-testimonials-title">
+							<h6>Testimonials</h6>
+							<h2>What clients are saying about Us</h2>
+							<p>
+								Here's what our happy clients are saying about
+								their experience with us!
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-7">
+						<div class="testimonials-content">
+							<div
+								id="testimonial-slider"
+								class="carousel slide testimonials-content-wrapper"
+								data-bs-ride="carousel"
+							>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<p class="client-review">
+											DMarketing has been a game-changer
+											for our business. Their creative
+											strategies and data-driven approach
+											helped us reach a wider audience and
+											increase conversions. The team's
+											dedication and attention to detail
+											are unmatched. Highly recommend
+											their services!
+										</p>
+										<div
+											class="d-flex align-items-center gap-3 mt-3 client-profile"
+										>
+											<img
+												src="images/client1.jpg"
+												alt="Client Images"
+												loading="lazy"
+											/>
+											<div class="client-profile-name">
+												<h6>Hasibul Islam Tuhin</h6>
+												<p>Web Developer</p>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<p class="client-review">
+											Choosing DMarketing was one of the
+											best decisions we made for our
+											business. From day one, their team
+											demonstrated a deep understanding of
+											our goals and crafted tailored
+											marketing strategies that exceeded
+											our expectations. Their creativity,
+											professionalism, and ability to
+											analyze data to optimize campaigns
+											set them apart from other agencies.
+											Thanks to their efforts, we've seen
+											a significant boost in engagement,
+											brand visibility, and sales. They
+											kept us in the loop every step of
+											the way, making the entire process
+											smooth and collaborative. We highly
+											recommend DMarketing for anyone
+											looking to take their digital
+											presence to the next level!
+										</p>
+										<div
+											class="d-flex align-items-center gap-3 mt-3 client-profile"
+										>
+											<img
+												src="images/client2.jpg"
+												alt="Client Images"
+												loading="lazy"
+											/>
+											<div class="client-profile-name">
+												<h6>Moshiur Rahman Shetu</h6>
+												<p>Frontend Developer</p>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<p class="client-review">
+											DMarketing delivered impressive
+											results! Their expert team boosted
+											our online presence and helped us
+											connect with more customers. Highly
+											recommend their services!
+										</p>
+										<div
+											class="d-flex align-items-center gap-3 mt-3 client-profile"
+										>
+											<img
+												src="images/client3.png"
+												alt="Client Images"
+												loading="lazy"
+											/>
+											<div class="client-profile-name">
+												<h6>MD. Sahadat Hossain</h6>
+												<p>Backend Developer</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button
+									class="carousel-control-prev"
+									data-bs-target="#testimonial-slider"
+									data-bs-slide="prev"
+								>
+									<i class="fa-solid fa-chevron-left"></i>
+								</button>
+								<button
+									class="carousel-control-next"
+									data-bs-target="#testimonial-slider"
+									data-bs-slide="next"
+								>
+									<i class="fa-solid fa-chevron-right"></i>
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1122,13 +1256,13 @@
 							<div class="col-sm-4">
 								<h4>Community</h4>
 								<ul>
-									<li><a href="">Blog</a></li>
+									<li><a href="blogs.html">Blog</a></li>
 									<li><a href="">Documentation</a></li>
-									<li>
-										<a href="">Digital Consulting</a>
-									</li>
 									<li><a href="">Facebook</a></li>
 									<li><a href="">Discord</a></li>
+									<li>
+										<a href="">LinkedIn</a>
+									</li>
 								</ul>
 							</div>
 							<div class="col-sm-4">
@@ -1139,9 +1273,18 @@
 										<a href="contact.html">Contact Us</a>
 									</li>
 									<li>
-										<a href="service.html">Services</a>
+										<a href="testimonials.html"
+											>Testimonials</a
+										>
 									</li>
-									<li><a href="">Owner</a></li>
+									<li>
+										<a href="privacy-policy.html"
+											>Privacy Policy</a
+										>
+									</li>
+									<li>
+										<a href="faqs.html">FAQs</a>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -1177,7 +1320,7 @@
 		<script src="js/script.js"></script>
 
 		<script>
-			// Progress bar
+			// Experience Progress bar
 			$(document).ready(function () {
 				$(".progress-bar-container").waypoint(
 					function () {
@@ -1211,7 +1354,7 @@
 				}
 			});
 
-			// Initialize Countup
+			// Initialize Experience Countup
 			$(".counter").countUp();
 
 			// Initialize Swiper

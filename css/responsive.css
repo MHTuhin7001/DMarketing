@@ -60,7 +60,8 @@
 	footer .newsletter .contact-wrapper .contact {
 		margin-bottom: 20px;
 	}
-	.contact h5 {
+	.contact h5,
+	.work-process .work-process-content h5 {
 		font-size: 1.15rem;
 	}
 	footer .newsletter form {
@@ -112,8 +113,18 @@
 	.featured-blog .blog-content-wrapper {
 		height: 285px;
 	}
+	.featured-testimonials .featured-testimonials-wrapper .col-lg-5 {
+		background-size: contain;
+		background-position: right;
+	}
+	.featured-testimonials .featured-testimonials-title p {
+		margin-right: 0;
+	}
 	.free-analysis .free-analysis-form {
 		margin-left: 0;
+	}
+	.work-process .work-process-content p {
+		font-size: 0.9rem;
 	}
 }
 
@@ -195,7 +206,8 @@
 	.partners img {
 		width: 100px;
 	}
-	.experience .experience-display {
+	.experience .experience-display,
+	.about-us .about-us-display {
 		height: 250px;
 		margin-bottom: 40px;
 	}
@@ -204,6 +216,12 @@
 		height: 250px;
 		margin-bottom: 30px;
 		padding: 20px 0;
+	}
+	.about-us .container {
+		padding-top: 100px;
+	}
+	.about-us .about-us-wrapper .col-md-6:first-child {
+		order: 2;
 	}
 }
 
@@ -255,10 +273,16 @@
 	.projects .projects-content-wrapper .project-content p,
 	.services .services-title h6,
 	.services .services-content-wrapper .services-content p,
+	.testimonials .testimonials-content p,
+	.featured-testimonials .featured-testimonials-title h6,
+	.featured-testimonials .featured-testimonials-title p,
 	.free-analysis .free-analysis-form .free-analysis-form-title p,
 	.free-analysis .free-analysis-form form .btn,
 	.blog .blog-title h6,
-	.blog .blog-content .blog-content-title p {
+	.blog .blog-content .blog-content-title p,
+	.about-us .about-us-content p,
+	.about-us .about-us-content .btn,
+	.work-process .work-process-title h6 {
 		font-size: 0.9rem;
 	}
 	.what-we-do .what-we-do-content h2,
@@ -266,11 +290,15 @@
 	.why-choose-us .why-choose-us-content h2,
 	.featured-projects .featured-projects-title h2,
 	.services .services-title h2,
+	.featured-testimonials .featured-testimonials-title h2,
 	.free-analysis .free-analysis-form .free-analysis-form-title h2,
-	.blog .blog-title h2 {
+	.blog .blog-title h2,
+	.about-us .about-us-content h2,
+	.work-process .work-process-title h2 {
 		font-size: 1.5rem;
 	}
-	.experience .experience-display {
+	.experience .experience-display,
+	.about-us .about-us-display {
 		height: 200px;
 		margin-bottom: 25px;
 	}
@@ -284,8 +312,17 @@
 	.featured-blog .blog-content-wrapper {
 		margin-top: 15px;
 	}
-	.featured-projects .projects-content-wrapper .project-content h6 {
+	.featured-projects .projects-content-wrapper .project-content h6,
+	.featured-testimonials .testimonials-content h6 {
 		font-size: 1rem;
+	}
+	.testimonials .testimonials-content .testimonials-content-wrapper {
+		background-size: 40px;
+		background-position: left 25px top 35px;
+		padding-left: 70px;
+	}
+	.about-us .container {
+		padding-top: 80px;
 	}
 }
 
@@ -342,8 +379,11 @@
 	.experience .experience-content h2,
 	.featured-projects .featured-projects-title h2,
 	.services .services-title h2,
+	.featured-testimonials .featured-testimonials-title h2,
 	.free-analysis .free-analysis-form .free-analysis-form-title h2,
-	.blog .blog-title h2 {
+	.blog .blog-title h2,
+	.about-us .about-us-content h2,
+	.work-process .work-process-title h2 {
 		font-size: 1.25rem;
 	}
 	.services .services-content img {
@@ -352,7 +392,8 @@
 	.services .services-content h4 {
 		font-size: 1.15rem;
 	}
-	.experience .experience-display {
+	.experience .experience-display,
+	.about-us .about-us-display {
 		height: 170px;
 		margin-bottom: 15px;
 	}
@@ -367,5 +408,12 @@
 	}
 	.blog .modal .modal-body p {
 		font-size: 1rem;
+	}
+	.testimonials .testimonials-content .testimonials-content-wrapper {
+		background-position: left 10px top 10px;
+		padding-left: 50px;
+	}
+	.featured-testimonials .testimonials-content img {
+		width: 60px;
 	}
 }
