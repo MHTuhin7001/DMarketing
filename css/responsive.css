@@ -15,9 +15,6 @@
 		grid-template-columns: repeat(4, auto);
 		margin: 0 120px;
 	}
-	.about-us .container {
-		padding-top: 100px;
-	}
 	.work-process
 		.work-process-content-wrapper
 		.col-md-3:nth-child(odd)
@@ -37,18 +34,24 @@
 	.container {
 		padding: 50px 100px;
 	}
-	.hero-banner .hero-banner-wrapper .col-md-6:last-child {
+	.hero-banner .hero-banner-wrapper .col-md-6:last-child,
+	.about-us .about-us-wrapper .col-md-6:last-child,
+	.services-banner .services-banner-wrapper .col-md-6:last-child {
 		margin-top: 60px;
 	}
 	.hero-banner .hero-banner-content h1,
-	.about-us .about-us-content h1 {
+	.about-us .about-us-content h1,
+	.services-banner .services-banner-content h1 {
 		line-height: 3rem;
 		font-size: 3rem;
 	}
-	.hero-banner .hero-banner-content p {
+	.hero-banner .hero-banner-content p,
+	.about-us .about-us-content p,
+	.services-banner .services-banner-content p {
 		margin: 8px 10% 20px 0;
 	}
-	.hero-banner .hero-banner-content form {
+	.hero-banner .hero-banner-content form,
+	.services-banner .services-banner-content form {
 		width: 80%;
 		margin-bottom: 30px;
 	}
@@ -102,15 +105,18 @@
 		margin-top: 20px;
 	}
 	.hero-banner .hero-banner-display,
-	.about-us .about-us-display {
+	.about-us .about-us-display,
+	.services-banner .services-banner-display {
 		height: 400px;
 	}
 	.hero-banner .hero-banner-content h1,
-	.about-us .about-us-content h1 {
+	.about-us .about-us-content h1,
+	.services-banner .services-banner-content h1 {
 		line-height: 2.5rem;
 		font-size: 2.5rem;
 	}
-	.hero-banner .hero-banner-content form {
+	.hero-banner .hero-banner-content form,
+	.services-banner .services-banner-content form {
 		width: 100%;
 	}
 	.featured-partners .featured-partners-wrapper {
@@ -141,9 +147,6 @@
 	}
 	.free-analysis .free-analysis-form {
 		margin-left: 0;
-	}
-	.about-us .container {
-		padding-top: 120px;
 	}
 	.work-process .work-process-content p {
 		font-size: 0.9rem;
@@ -226,18 +229,21 @@
 		border-radius: 0 5px 5px 0;
 	}
 	.hero-banner .hero-banner-display,
-	.about-us .about-us-display {
+	.about-us .about-us-display,
+	.services-banner .services-banner-display {
 		height: 320px;
 	}
 	.hero-banner .hero-banner-content h1,
-	.about-us .about-us-content h1 {
+	.about-us .about-us-content h1,
+	.services-banner .services-banner-content h1 {
 		line-height: 3.5rem;
 		font-size: 3.5rem;
 	}
 	.hero-banner .hero-banner-content p {
 		margin-right: 20%;
 	}
-	.hero-banner .hero-banner-content form {
+	.hero-banner .hero-banner-content form,
+	.services-banner .services-banner-content form {
 		width: 60%;
 	}
 	.featured-partners img {
@@ -252,12 +258,6 @@
 		height: 250px;
 		margin-bottom: 30px;
 		padding: 20px 0;
-	}
-	.about-us .container {
-		padding-top: 40px;
-	}
-	.about-us .about-us-wrapper .col-md-6:first-child {
-		order: 2;
 	}
 	.work-process
 		.work-process-content-wrapper
@@ -303,21 +303,26 @@
 		gap: 3px;
 	}
 	.hero-banner .hero-banner-display,
-	.about-us .about-us-display {
+	.about-us .about-us-display,
+	.services-banner .services-banner-display {
 		height: 250px;
 	}
-	.hero-banner .hero-banner-wrapper .col-md-6:last-child {
+	.hero-banner .hero-banner-wrapper .col-md-6:last-child,
+	.about-us .about-us-wrapper .col-md-6:last-child,
+	.services-banner .services-banner-wrapper .col-md-6:last-child {
 		margin-top: 30px;
 	}
 	.hero-banner .hero-banner-content h1,
-	.about-us .about-us-content h1 {
+	.about-us .about-us-content h1,
+	.services-banner .services-banner-content h1 {
 		line-height: 2.5rem;
 		font-size: 2.5rem;
 	}
 	.hero-banner .hero-banner-content p {
 		margin-right: 15%;
 	}
-	.hero-banner .hero-banner-content form {
+	.hero-banner .hero-banner-content form,
+	.services-banner .services-banner-content form {
 		width: 90%;
 	}
 	.featured-partners .featured-partners-wrapper {
@@ -349,7 +354,8 @@
 	.about-us .about-us-content p,
 	.about-us .about-us-content .btn,
 	.work-process .work-process-title h6,
-	.partners .partners-title h6 {
+	.partners .partners-title h6,
+	.services-banner .services-banner-content p {
 		font-size: 0.9rem;
 	}
 	.what-we-do .what-we-do-content h2,
@@ -433,24 +439,30 @@
 		font-size: 0.95rem;
 	}
 	.hero-banner .hero-banner-display,
-	.about-us .about-us-display {
+	.about-us .about-us-display,
+	.services-banner .services-banner-display {
 		height: 220px;
 	}
-	.hero-banner .hero-banner-wrapper .col-md-6:last-child {
+	.hero-banner .hero-banner-wrapper .col-md-6:last-child,
+	.about-us .about-us-wrapper .col-md-6:last-child,
+	.services-banner .services-banner-wrapper .col-md-6:last-child {
 		margin-top: 20px;
 	}
 	.hero-banner .hero-banner-content h1,
-	.about-us .about-us-content h1 {
+	.about-us .about-us-content h1,
+	.services-banner .services-banner-content h1 {
 		line-height: 2rem;
 		font-size: 2rem;
 	}
 	.hero-banner .hero-banner-content p {
 		margin-right: 0;
 	}
-	.hero-banner .hero-banner-content form {
+	.hero-banner .hero-banner-content form,
+	.services-banner .services-banner-content form {
 		width: 100%;
 	}
-	.hero-banner .hero-banner-content form .btn {
+	.hero-banner .hero-banner-content form .btn,
+	.services-banner .services-banner-content form .btn {
 		font-size: 0.9rem;
 		padding: 8px 15px;
 	}
