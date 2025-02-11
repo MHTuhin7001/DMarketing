@@ -11,7 +11,7 @@
 	.navbar-brand img {
 		width: 200px;
 	}
-	.partners .partners-wrapper {
+	.featured-partners .featured-partners-wrapper {
 		grid-template-columns: repeat(4, auto);
 		margin: 0 120px;
 	}
@@ -40,7 +40,8 @@
 	.hero-banner .hero-banner-wrapper .col-md-6:last-child {
 		margin-top: 60px;
 	}
-	.hero-banner .hero-banner-content h1 {
+	.hero-banner .hero-banner-content h1,
+	.about-us .about-us-content h1 {
 		line-height: 3rem;
 		font-size: 3rem;
 	}
@@ -51,7 +52,7 @@
 		width: 80%;
 		margin-bottom: 30px;
 	}
-	.partners .partners-wrapper {
+	.featured-partners .featured-partners-wrapper {
 		margin: 0 60px;
 	}
 	.featured-projects .projects-content-wrapper,
@@ -104,14 +105,15 @@
 	.about-us .about-us-display {
 		height: 400px;
 	}
-	.hero-banner .hero-banner-content h1 {
+	.hero-banner .hero-banner-content h1,
+	.about-us .about-us-content h1 {
 		line-height: 2.5rem;
 		font-size: 2.5rem;
 	}
 	.hero-banner .hero-banner-content form {
 		width: 100%;
 	}
-	.partners .partners-wrapper {
+	.featured-partners .featured-partners-wrapper {
 		margin: 0;
 	}
 	.what-we-do .what-we-do-content {
@@ -227,7 +229,8 @@
 	.about-us .about-us-display {
 		height: 320px;
 	}
-	.hero-banner .hero-banner-content h1 {
+	.hero-banner .hero-banner-content h1,
+	.about-us .about-us-content h1 {
 		line-height: 3.5rem;
 		font-size: 3.5rem;
 	}
@@ -237,7 +240,7 @@
 	.hero-banner .hero-banner-content form {
 		width: 60%;
 	}
-	.partners img {
+	.featured-partners img {
 		width: 100px;
 	}
 	.experience .experience-display {
@@ -268,8 +271,8 @@
 		.col-md-3:nth-child(even)
 		.work-process-content::before {
 		left: -50%;
-		bottom: -14px;
-		transform: rotate(-22deg);
+		bottom: -22px;
+		transform: rotate(-23deg);
 	}
 	.work-process
 		.work-process-content-wrapper
@@ -306,7 +309,8 @@
 	.hero-banner .hero-banner-wrapper .col-md-6:last-child {
 		margin-top: 30px;
 	}
-	.hero-banner .hero-banner-content h1 {
+	.hero-banner .hero-banner-content h1,
+	.about-us .about-us-content h1 {
 		line-height: 2.5rem;
 		font-size: 2.5rem;
 	}
@@ -316,13 +320,14 @@
 	.hero-banner .hero-banner-content form {
 		width: 90%;
 	}
-	.partners .partners-wrapper {
+	.featured-partners .featured-partners-wrapper {
 		grid-template-columns: repeat(3, auto);
 		row-gap: 20px;
 	}
 	.what-we-do .what-we-do-content {
 		margin: 0 0 40px 0 !important;
 	}
+	.hero-banner .hero-banner-content p,
 	.what-we-do .what-we-do-content h6,
 	.what-we-do .what-we-do-content p,
 	.what-we-do .what-we-do-content .btn,
@@ -343,7 +348,8 @@
 	.blog .blog-content .blog-content-title p,
 	.about-us .about-us-content p,
 	.about-us .about-us-content .btn,
-	.work-process .work-process-title h6 {
+	.work-process .work-process-title h6,
+	.partners .partners-title h6 {
 		font-size: 0.9rem;
 	}
 	.what-we-do .what-we-do-content h2,
@@ -355,7 +361,8 @@
 	.free-analysis .free-analysis-form .free-analysis-form-title h2,
 	.blog .blog-title h2,
 	.about-us .about-us-content h2,
-	.work-process .work-process-title h2 {
+	.work-process .work-process-title h2,
+	.partners .partners-title h2 {
 		font-size: 1.5rem;
 	}
 	.experience .experience-display {
@@ -399,6 +406,9 @@
 		.work-process-icon {
 		order: inherit;
 	}
+	.partners .partners-content img {
+		width: 100px;
+	}
 }
 
 @media (max-width: 375px) {
@@ -429,7 +439,8 @@
 	.hero-banner .hero-banner-wrapper .col-md-6:last-child {
 		margin-top: 20px;
 	}
-	.hero-banner .hero-banner-content h1 {
+	.hero-banner .hero-banner-content h1,
+	.about-us .about-us-content h1 {
 		line-height: 2rem;
 		font-size: 2rem;
 	}
@@ -443,11 +454,11 @@
 		font-size: 0.9rem;
 		padding: 8px 15px;
 	}
-	.partners .partners-wrapper {
+	.featured-partners .featured-partners-wrapper {
 		height: 90px;
 		row-gap: 10px;
 	}
-	.partners img {
+	.featured-partners img {
 		width: 80px;
 		height: 40px;
 	}
@@ -459,7 +470,8 @@
 	.free-analysis .free-analysis-form .free-analysis-form-title h2,
 	.blog .blog-title h2,
 	.about-us .about-us-content h2,
-	.work-process .work-process-title h2 {
+	.work-process .work-process-title h2,
+	.partners .partners-title h2 {
 		font-size: 1.25rem;
 	}
 	.services .services-content img {
@@ -490,5 +502,8 @@
 	}
 	.featured-testimonials .testimonials-content img {
 		width: 60px;
+	}
+	.partners .partners-content img {
+		width: 120px;
 	}
 }

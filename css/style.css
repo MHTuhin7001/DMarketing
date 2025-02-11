@@ -118,8 +118,7 @@ header .offcanvas .navbar-nav .nav-item .nav-link:hover ~ i {
 }
 header .offcanvas .navbar-nav .nav-item:last-child .nav-link,
 .what-we-do .what-we-do-content .btn,
-.free-analysis .free-analysis-form form .btn,
-.about-us .about-us-content .btn {
+.free-analysis .free-analysis-form form .btn {
 	color: var(--textWhite);
 	background: var(--gradient);
 	padding: 7px 20px;
@@ -127,8 +126,7 @@ header .offcanvas .navbar-nav .nav-item:last-child .nav-link,
 }
 header .offcanvas .navbar-nav .nav-item:last-child .nav-link:hover,
 .what-we-do .what-we-do-content .btn:hover,
-.free-analysis .free-analysis-form form .btn:hover,
-.about-us .about-us-content .btn:hover {
+.free-analysis .free-analysis-form form .btn:hover {
 	-webkit-text-fill-color: inherit;
 	background: linear-gradient(
 		135deg,
@@ -281,7 +279,8 @@ footer .copyright p a {
 	background-blend-mode: lighten;
 	margin-top: 80px;
 }
-.hero-banner .hero-banner-content h1 {
+.hero-banner .hero-banner-content h1,
+.about-us .about-us-content h1 {
 	display: inline-block;
 	line-height: 4rem;
 	font-size: 4rem;
@@ -290,7 +289,8 @@ footer .copyright p a {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-.hero-banner .hero-banner-content p {
+.hero-banner .hero-banner-content p,
+.about-us .about-us-content p {
 	font-weight: 500;
 	color: var(--text);
 	opacity: 0.75;
@@ -323,11 +323,11 @@ footer .copyright p a {
 	right: 4px;
 }
 
-/* Partners */
-.partners .container {
+/* Featured Partners */
+.featured-partners .container {
 	padding-top: 0;
 }
-.partners .partners-wrapper {
+.featured-partners .featured-partners-wrapper {
 	overflow: hidden;
 	display: grid;
 	height: 130px;
@@ -336,11 +336,12 @@ footer .copyright p a {
 	row-gap: 30px;
 	margin: 0 180px;
 }
-.partners img {
+.featured-partners img {
 	width: 130px;
 	height: 50px;
 	object-fit: contain;
 	filter: grayscale(100%) brightness(0.8) opacity(0.7);
+	cursor: pointer;
 }
 
 /* What We Do */
@@ -350,8 +351,8 @@ footer .copyright p a {
 .services .services-title h6,
 .featured-testimonials .featured-testimonials-title h6,
 .blog .blog-title h6,
-.about-us .about-us-content h6,
-.work-process .work-process-title h6 {
+.work-process .work-process-title h6,
+.partners .partners-title h6 {
 	font-weight: 500;
 	color: var(--primary);
 }
@@ -362,15 +363,14 @@ footer .copyright p a {
 .featured-testimonials .featured-testimonials-title h2,
 .free-analysis .free-analysis-form .free-analysis-form-title h2,
 .blog .blog-title h2,
-.about-us .about-us-content h2,
-.work-process .work-process-title h2 {
+.work-process .work-process-title h2,
+.partners .partners-title h2 {
 	font-weight: 700;
 }
 .what-we-do .what-we-do-content p,
 .experience .experience-content p,
 .featured-testimonials .featured-testimonials-title p,
-.free-analysis .free-analysis-form .free-analysis-form-title p,
-.about-us .about-us-content p {
+.free-analysis .free-analysis-form .free-analysis-form-title p {
 	text-align: justify;
 	font-weight: 500;
 	margin: 15px 0 30px;
@@ -440,7 +440,8 @@ footer .copyright p a {
 	right: 5px;
 	transition: 0.3s all;
 }
-.experience .experience-content .btn {
+.experience .experience-content .btn,
+.about-us .about-us-content .btn {
 	color: var(--textWhite);
 	background: var(--text);
 	margin-top: 15px;
@@ -467,7 +468,8 @@ footer .copyright p a {
 
 /* Featured Projects */
 .featured-projects .container,
-.featured-blog .container {
+.featured-blog .container,
+.partners .container {
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
@@ -528,7 +530,8 @@ footer .copyright p a {
 }
 
 /* Services */
-.services .services-content-wrapper {
+.services .services-content-wrapper,
+.partners .partners-content {
 	margin-top: 25px;
 }
 .services .services-content-wrapper .services-content-title img {
@@ -822,6 +825,11 @@ footer .copyright p a {
 	right: 4px;
 }
 
+/* About Us */
+.about-us .about-us-content p {
+	margin: 10px 0 25px;
+}
+
 /* Work Process */
 .work-process .work-process-content-wrapper {
 	margin-top: 50px;
@@ -836,7 +844,11 @@ footer .copyright p a {
 	position: absolute;
 	width: 100%;
 	height: 3px;
-	background: var(--primary);
+	background: linear-gradient(
+		135deg,
+		var(--primary) 0%,
+		var(--secondary) 100%
+	);
 	left: 50%;
 	z-index: 1;
 }
@@ -882,8 +894,9 @@ footer .copyright p a {
 	display: inline-grid;
 	width: 28px;
 	height: 28px;
+	font-weight: 700;
 	color: var(--textWhite);
-	background: var(--gradient);
+	background: var(--text);
 	border-radius: 50%;
 	place-items: center;
 	top: -5px;
@@ -919,4 +932,21 @@ footer .copyright p a {
 	height: 24px;
 	text-overflow: ellipsis;
 	-webkit-line-clamp: 1;
+}
+
+/* Partners */
+.partners .partners-content img {
+	width: 150px;
+	height: 70px;
+	text-align: center;
+	object-fit: contain;
+}
+.partners .swiper-slide {
+	text-align: center;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+	font-size: 1.5rem;
+	font-weight: 900;
+	color: var(--text);
 }
