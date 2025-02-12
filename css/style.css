@@ -269,9 +269,7 @@ footer .copyright p a {
 .hero-banner .container {
 	padding-top: 40px;
 }
-.hero-banner .hero-banner-display,
-.about-us .about-us-display,
-.services-banner .services-banner-display {
+.hero-banner .hero-banner-display {
 	height: 100%;
 }
 .hero-banner .hero-banner-wrapper .col-md-6:last-child {
@@ -280,9 +278,7 @@ footer .copyright p a {
 	background-blend-mode: lighten;
 	margin-top: 80px;
 }
-.hero-banner .hero-banner-content h1,
-.about-us .about-us-content h1,
-.services-banner .services-banner-content h1 {
+.hero-banner .hero-banner-content h1 {
 	display: inline-block;
 	line-height: 4rem;
 	font-size: 4rem;
@@ -291,16 +287,13 @@ footer .copyright p a {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-.hero-banner .hero-banner-content p,
-.about-us .about-us-content p,
-.services-banner .services-banner-content p {
+.hero-banner .hero-banner-content p {
 	font-weight: 500;
 	color: var(--text);
 	opacity: 0.75;
 	margin: 10px 20% 25px 0;
 }
-.hero-banner .hero-banner-content form,
-.services-banner .services-banner-content form {
+.hero-banner .hero-banner-content form {
 	position: relative;
 	display: flex;
 	width: 70%;
@@ -308,17 +301,14 @@ footer .copyright p a {
 	border-radius: 5px;
 	box-shadow: rgba(60, 40, 83, 0.2) 1px 2px 8px;
 }
-.hero-banner .hero-banner-content form .form-control,
-.services-banner .services-banner-content form .form-control {
+.hero-banner .hero-banner-content form .form-control {
 	padding: 12px;
 	border: none;
 }
-.hero-banner .hero-banner-content form .form-control:focus,
-.services-banner .services-banner-content form .form-control:focus {
+.hero-banner .hero-banner-content form .form-control:focus {
 	box-shadow: 0 0 0 0.25rem rgba(60, 40, 83, 0.25);
 }
-.hero-banner .hero-banner-content form .btn,
-.services-banner .services-banner-content form .btn {
+.hero-banner .hero-banner-content form .btn {
 	position: absolute;
 	font-family: var(--heading);
 	font-weight: 700;
@@ -386,7 +376,7 @@ footer .copyright p a {
 .what-we-do .what-we-do-content .btn,
 .experience .experience-content .btn,
 .free-analysis .free-analysis-form form .btn,
-.about-us .about-us-content .btn {
+.about-banner .hero-banner-content .btn {
 	font-weight: 700;
 	padding: 8px 24px;
 	transition: 0.3s all;
@@ -456,7 +446,7 @@ footer .copyright p a {
 	transition: 0.3s all;
 }
 .experience .experience-content .btn,
-.about-us .about-us-content .btn {
+.about-banner .hero-banner-content .btn {
 	color: var(--textWhite);
 	background: var(--text);
 	margin-top: 15px;
@@ -845,12 +835,16 @@ footer .copyright p a {
 }
 
 /* About Us */
-.about-us .about-us-wrapper .col-md-6:last-child,
-.services-banner .services-banner-wrapper .col-md-6:last-child {
-	margin-top: 80px;
+.about-banner .hero-banner-wrapper .col-md-6:last-child,
+.services-banner .hero-banner-wrapper .col-md-6:last-child,
+.service-detail-banner .hero-banner-wrapper .col-md-6:last-child,
+.project-banner .hero-banner-wrapper .col-md-6:last-child {
+	background: none;
 }
-.about-us .about-us-content p,
-.services-banner .services-banner-content p {
+.about-banner .hero-banner-content p,
+.services-banner .hero-banner-content p,
+.service-detail-banner .hero-banner-content p,
+.project-banner .hero-banner-content p {
 	margin-right: 0 !important;
 }
 
@@ -973,4 +967,15 @@ footer .copyright p a {
 	font-size: 1.5rem;
 	font-weight: 900;
 	color: var(--text);
+}
+
+/* Projects */
+.projects .projects-wrapper {
+	height: inherit !important;
+	column-count: 5;
+	gap: 15px;
+}
+.projects .projects-wrapper .project-content-display {
+	margin-bottom: 15px;
+	break-inside: avoid;
 }
