@@ -31,6 +31,9 @@
 	.projects .projects-wrapper {
 		column-count: 4;
 	}
+	.contact-us form {
+		width: 50%;
+	}
 }
 
 @media (max-width: 1199px) {
@@ -64,6 +67,9 @@
 	.blog .blog-content-wrapper.row .blog-content-display {
 		height: 270px;
 	}
+	.contact-us form {
+		width: 60%;
+	}
 }
 
 @media (max-width: 991px) {
@@ -81,7 +87,8 @@
 	}
 	.contact h5,
 	.work-process .work-process-content h5,
-	.blog-detail .blog-detail-content .blog-detail-content-wrapper h5 {
+	.blog-detail .blog-detail-content .blog-detail-content-wrapper h5,
+	.contact-us form .col-sm-12 .row h5 {
 		font-size: 1.15rem;
 	}
 	footer .newsletter form {
@@ -170,6 +177,12 @@
 	}
 	.blog-detail .col-lg-4 .row .col-sm-6:last-child {
 		margin-top: 0;
+	}
+	.contact-us form {
+		width: 70%;
+	}
+	.location-map iframe {
+		height: 300px;
 	}
 }
 
@@ -297,6 +310,12 @@
 	.blog-detail .blog-detail-content img {
 		height: 350px;
 	}
+	.contact-us form {
+		width: 80%;
+	}
+	.location-map iframe {
+		height: 280px;
+	}
 }
 
 @media (max-width: 575px) {
@@ -360,7 +379,8 @@
 	.partners .partners-title h6,
 	.blog-detail .blog-detail-title a,
 	.blog-detail .blog-detail-breadcrumb ol li a,
-	.blog-detail .blog-detail-content .blog-detail-content-wrapper h6 {
+	.blog-detail .blog-detail-content .blog-detail-content-wrapper h6,
+	.contact-us .contact-us-title h6 {
 		font-size: 0.9rem;
 	}
 	.what-we-do .what-we-do-content h2,
@@ -374,7 +394,8 @@
 	.work-process .work-process-title h2,
 	.partners .partners-title h2,
 	.blog-detail .blog-detail-title h2,
-	.blog-detail .blog-detail-content .blog-detail-content-wrapper h2 {
+	.blog-detail .blog-detail-content .blog-detail-content-wrapper h2,
+	.contact-us .contact-us-title h2 {
 		font-size: 1.5rem;
 	}
 	.experience .experience-display {
@@ -439,6 +460,12 @@
 	.blog-detail .blog-detail-content img {
 		height: 280px;
 	}
+	.contact-us form {
+		width: 100%;
+	}
+	.location-map iframe {
+		height: 250px;
+	}
 }
 
 @media (max-width: 375px) {
@@ -501,7 +528,8 @@
 	.work-process .work-process-title h2,
 	.partners .partners-title h2,
 	.blog-detail .blog-detail-title h2,
-	.blog-detail .blog-detail-content .blog-detail-content-wrapper h2 {
+	.blog-detail .blog-detail-content .blog-detail-content-wrapper h2,
+	.contact-us .contact-us-title h2 {
 		font-size: 1.25rem;
 	}
 	.services .services-content img {
@@ -551,5 +579,12 @@
 	}
 	.blog-detail .blog-detail-content img {
 		height: 250px;
+	}
+	.contact-us form .col-sm-12 .row .col-6 {
+		width: 100%;
+		margin-bottom: 12px;
+	}
+	.location-map iframe {
+		height: 200px;
 	}
 }

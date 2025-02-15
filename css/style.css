@@ -118,7 +118,8 @@ header .offcanvas .navbar-nav .nav-item .nav-link:hover ~ i {
 }
 header .offcanvas .navbar-nav .nav-item:last-child .nav-link,
 .what-we-do .what-we-do-content .btn,
-.free-analysis .free-analysis-form form .btn {
+.free-analysis .free-analysis-form form .btn,
+.contact-us form .btn {
 	color: var(--textWhite);
 	background: var(--gradient);
 	padding: 7px 20px;
@@ -126,7 +127,8 @@ header .offcanvas .navbar-nav .nav-item:last-child .nav-link,
 }
 header .offcanvas .navbar-nav .nav-item:last-child .nav-link:hover,
 .what-we-do .what-we-do-content .btn:hover,
-.free-analysis .free-analysis-form form .btn:hover {
+.free-analysis .free-analysis-form form .btn:hover,
+.contact-us form .btn:hover {
 	-webkit-text-fill-color: inherit;
 	background: linear-gradient(
 		135deg,
@@ -184,7 +186,8 @@ footer .container {
 }
 .contact h5,
 .work-process .work-process-content h5,
-.blog-detail .blog-detail-content .blog-detail-content-wrapper h5 {
+.blog-detail .blog-detail-content .blog-detail-content-wrapper h5,
+.contact-us form .col-sm-12 .row h5 {
 	font-weight: 600;
 	color: var(--text);
 }
@@ -356,7 +359,8 @@ footer .copyright p a {
 .blog .blog-title h6,
 .work-process .work-process-title h6,
 .partners .partners-title h6,
-.blog-detail .blog-detail-title a {
+.blog-detail .blog-detail-title a,
+.contact-us .contact-us-title h6 {
 	font-weight: 500;
 	color: var(--primary);
 }
@@ -370,7 +374,8 @@ footer .copyright p a {
 .work-process .work-process-title h2,
 .partners .partners-title h2,
 .blog-detail .blog-detail-title h2,
-.blog-detail .blog-detail-content .blog-detail-content-wrapper h2 {
+.blog-detail .blog-detail-content .blog-detail-content-wrapper h2,
+.contact-us .contact-us-title h2 {
 	font-weight: 700;
 }
 .what-we-do .what-we-do-content p,
@@ -385,7 +390,8 @@ footer .copyright p a {
 .what-we-do .what-we-do-content .btn,
 .experience .experience-content .btn,
 .free-analysis .free-analysis-form form .btn,
-.about-banner .hero-banner-content .btn {
+.about-banner .hero-banner-content .btn,
+.contact-us form .btn {
 	font-weight: 700;
 	padding: 8px 24px;
 	transition: 0.3s all;
@@ -553,7 +559,8 @@ footer .copyright p a {
 /* Services */
 .services .services-content-wrapper,
 .partners .partners-content,
-.blog-detail .blog-detail-content {
+.blog-detail .blog-detail-content,
+.contact-us .contact-us-form {
 	margin-top: 25px;
 }
 .services .services-content-wrapper .services-content-title img {
@@ -664,10 +671,7 @@ footer .copyright p a {
 	border: 0.1em solid var(--primary);
 	box-shadow: 0 0 0 0.25rem rgba(243, 155, 80, 0.25);
 }
-.free-analysis
-	.free-analysis-form
-	form
-	input[type="number"]::-webkit-inner-spin-button {
+input[type="number"]::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 }
 .free-analysis .free-analysis-form form .btn {
@@ -1010,7 +1014,8 @@ footer .copyright p a {
 .blog-detail .blog-detail-breadcrumb ol li a,
 .blog-detail .blog-detail-date a,
 .blog-detail .col-lg-4 .row .blog-detail-category-list a,
-.blog-detail .col-lg-4 .recent-posts .recent-posts-content p a {
+.blog-detail .col-lg-4 .recent-posts .recent-posts-content p a,
+.contact-us form .col-sm-12 .row label {
 	font-weight: 600;
 	color: var(--text);
 	opacity: 0.9;
@@ -1093,4 +1098,42 @@ footer .copyright p a {
 }
 .blog-detail .col-lg-4 .recent-posts .recent-posts-content h6 {
 	color: var(--text);
+}
+
+/* Contact Us */
+.contact-us form {
+	width: 40%;
+}
+.contact-us form .col-sm-12,
+.contact-us form .col-sm-6 {
+	margin-top: 15px;
+}
+.contact-us form input,
+.contact-us form textarea {
+	border: 0.1em solid rgba(0, 0, 0, 0.4);
+}
+.contact-us form input:hover,
+.contact-us form textarea:hover {
+	border: 0.1em solid var(--primary);
+}
+.contact-us form input:focus,
+.contact-us form textarea:focus {
+	border: 0.1em solid var(--primary);
+	box-shadow: 0 0 0 0.25rem rgba(243, 155, 80, 0.25);
+}
+.contact-us form .form-check-input {
+	cursor: pointer;
+}
+.contact-us form .form-check-input:checked {
+	background-color: var(--primary);
+	border: 0.1em solid var(--primary);
+}
+
+/* Location Map */
+.location-map .container {
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+.location-map iframe {
+	height: 320px;
 }
