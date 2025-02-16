@@ -184,6 +184,9 @@
 	.location-map iframe {
 		height: 300px;
 	}
+	.testimonials-page .testimonials-content {
+		column-count: 1;
+	}
 }
 
 @media (max-width: 800px) {
@@ -367,9 +370,9 @@
 	.projects .projects-content-wrapper .project-content p,
 	.services .services-title h6,
 	.services .services-content-wrapper .services-content p,
-	.testimonials .testimonials-content p,
 	.featured-testimonials .featured-testimonials-title h6,
 	.featured-testimonials .featured-testimonials-title p,
+	.testimonials .testimonials-content p,
 	.free-analysis .free-analysis-form .free-analysis-form-title p,
 	.free-analysis .free-analysis-form form .btn,
 	.blog .blog-title h6,
@@ -380,7 +383,8 @@
 	.blog-detail .blog-detail-title a,
 	.blog-detail .blog-detail-breadcrumb ol li a,
 	.blog-detail .blog-detail-content .blog-detail-content-wrapper h6,
-	.contact-us .contact-us-title h6 {
+	.contact-us .contact-us-title h6,
+	.faqs .faqs-content .accordion-body {
 		font-size: 0.9rem;
 	}
 	.what-we-do .what-we-do-content h2,
@@ -413,7 +417,8 @@
 		margin-top: 15px;
 	}
 	.featured-projects .projects-content-wrapper .project-content h6,
-	.featured-testimonials .testimonials-content h6 {
+	.testimonials .testimonials-content h6,
+	.faqs .faqs-content .accordion-button {
 		font-size: 1rem;
 	}
 	.testimonials .testimonials-content .testimonials-content-wrapper {
@@ -559,7 +564,7 @@
 		background-position: left 10px top 10px;
 		padding-left: 50px;
 	}
-	.featured-testimonials .testimonials-content img {
+	.testimonials .testimonials-content img {
 		width: 60px;
 	}
 	.partners .partners-content img {
