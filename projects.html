@@ -1,460 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Projects - DMarketing</title>
-		<link
-			rel="shortcut icon"
-			href="images/favicon.png"
-			type="image/x-icon"
-		/>
-		<!-- Font Awesome Style -->
-		<link rel="stylesheet" href="css/all.min.css" />
-		<!-- Bootstrap Style -->
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
-		<!-- Fonts Style -->
-		<link rel="stylesheet" href="css/fonts.css" />
-		<!-- Main Style -->
-		<link rel="stylesheet" href="css/style.css" />
-		<!-- Responsive Style -->
-		<link rel="stylesheet" href="css/responsive.css" />
-	</head>
-	<body>
-		<!-- Header -->
-		<header>
-			<nav class="navbar navbar-expand-md">
-				<div class="container">
-					<a class="navbar-brand" href="index.html"
-						><img
-							src="images/logo.png"
-							alt="Brand Logo"
-							loading="lazy"
-					/></a>
-					<button
-						class="navbar-toggler"
-						data-bs-toggle="offcanvas"
-						data-bs-target="#main-menu"
-					>
-						<i class="fa-solid fa-align-right"></i>
-					</button>
-					<div
-						class="offcanvas offcanvas-end navbar-collapse"
-						id="main-menu"
-					>
-						<div class="offcanvas-header">
-							<h5 class="offcanvas-title">
-								Think Digital, Grow Global
-							</h5>
-							<i
-								class="ms-auto fa-solid fa-xmark"
-								data-bs-dismiss="offcanvas"
-							></i>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Projects - DMarketing</title>
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+	<!-- Font Awesome Style -->
+	<link rel="stylesheet" href="css/all.min.css" />
+	<!-- Bootstrap Style -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<!-- AOS Style -->
+	<link rel="stylesheet" href="css/aos.min.css">
+	<!-- Fonts Style -->
+	<link rel="stylesheet" href="css/fonts.css" />
+	<!-- Main Style -->
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- Responsive Style -->
+	<link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+	<!-- Header -->
+	<header data-aos="fade-down">
+		<nav class="navbar navbar-expand-md">
+			<div class="container">
+				<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Brand Logo"
+						loading="lazy" /></a>
+				<button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#main-menu">
+					<i class="fa-solid fa-align-right"></i>
+				</button>
+				<div class="offcanvas offcanvas-end navbar-collapse" id="main-menu">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title">
+							Think Digital, Grow Global
+						</h5>
+						<i class="ms-auto fa-solid fa-xmark" data-bs-dismiss="offcanvas"></i>
+					</div>
+					<div class="offcanvas-body">
+						<ul class="ms-auto navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about.html">About Us</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link" href="services.html">
+									Services
+								</a>
+								<i class="fa-solid fa-angle-down" data-bs-toggle="dropdown"></i>
+								<ul class="dropdown-menu">
+									<li>
+										<a class="dropdown-item" href="service-detail.html">Service Detail</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">Another action</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">Something else here</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="projects.html">Projects</a>
+							</li>
+							<li class="nav-item">
+								<a href="blogs.html" class="nav-link">Blog</a>
+							</li>
+							<li class="nav-item">
+								<a href="contact.html" class="nav-link">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<!-- Projects Banner -->
+	<section class="hero-banner project-banner">
+		<div class="container">
+			<div class="row hero-banner-wrapper">
+				<div class="col-md-6">
+					<div class="hero-banner-display" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="600">
+						<img src="images/project-banner.png" class="mht-img" alt="Hero Banner Image" loading="lazy" />
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="hero-banner-content" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1300">
+						<h1>Our Success Stories & Case Studies</h1>
+						<p>
+							Discover how DMarketing has helped businesses
+							grow with data-driven SEO strategies and
+							innovative digital marketing solutions. From
+							boosting search rankings to increasing
+							conversions, our case studies showcase real
+							results and proven success.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Projects -->
+	<section class="projects featured-projects" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
+		<div class="container">
+			<div class="featured-projects-wrapper">
+				<div class="text-center featured-projects-title">
+					<h6>Projects</h6>
+					<h2>Case Studies</h2>
+				</div>
+				<div class="projects-content-wrapper projects-wrapper">
+					<div class="project-content-display">
+						<img src="images/project1.jpg" class="mht-img" alt="Project Image" loading="lazy" />
+						<div class="project-content">
+							<p>Search Engine Optimization</p>
+							<h6>Technical SEO Audit and Implementation</h6>
 						</div>
-						<div class="offcanvas-body">
-							<ul class="ms-auto navbar-nav">
-								<li class="nav-item">
-									<a class="nav-link" href="index.html"
-										>Home</a
-									>
+					</div>
+					<div class="project-content-display">
+						<img src="images/project2.jpg" class="mht-img" alt="Project Image" loading="lazy" />
+						<div class="project-content">
+							<p>Content Marketing</p>
+							<h6>Blog Post Series for Niche Industry</h6>
+						</div>
+					</div>
+					<div class="project-content-display">
+						<img src="images/project3.jpg" class="mht-img" alt="Project Image" loading="lazy" />
+						<div class="project-content">
+							<p>Social Media Marketing</p>
+							<h6>LinkedIn Thought Leadership Campaign</h6>
+						</div>
+					</div>
+					<div class="project-content-display">
+						<img src="images/project4.jpg" class="mht-img" alt="Project Image" loading="lazy" />
+						<div class="project-content">
+							<p>Pay-Per-Click</p>
+							<h6>
+								Google Ads Campaign for E-commerce Store
+							</h6>
+						</div>
+					</div>
+					<div class="project-content-display">
+						<img src="images/project5.jpg" class="mht-img" alt="Project Image" loading="lazy" />
+						<div class="project-content">
+							<p>Email Marketing</p>
+							<h6>
+								Email Performance Analysis and Reporting
+							</h6>
+						</div>
+					</div>
+					<div class="project-content-display">
+						<img src="images/project6.jpg" class="mht-img" alt="Project Image" loading="lazy" />
+						<div class="project-content">
+							<p>Analytics & Reporting</p>
+							<h6>
+								Google Analytics 4 Implementation and
+								Reporting
+							</h6>
+						</div>
+					</div>
+					<div class="project-content-display">
+						<img src="images/project7.jpg" class="mht-img" alt="Project Image" loading="lazy" />
+						<div class="project-content">
+							<p>Pay-Per-Click</p>
+							<h6>
+								Google Ads Campaign for E-commerce Store
+							</h6>
+						</div>
+					</div>
+					<div class="project-content-display">
+						<img src="images/project8.jpg" class="mht-img" alt="Project Image" loading="lazy" />
+						<div class="project-content">
+							<p>Email Marketing</p>
+							<h6>
+								Email Performance Analysis and Reporting
+							</h6>
+						</div>
+					</div>
+					<div class="project-content-display">
+						<img src="images/project9.jpg" class="mht-img" alt="Project Image" loading="lazy" />
+						<div class="project-content">
+							<p>Analytics & Reporting</p>
+							<h6>
+								Google Analytics 4 Implementation and
+								Reporting
+							</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<section class="row align-items-center newsletter">
+				<div class="col-lg-7 col-md-6">
+					<div class="row contact-wrapper">
+						<div class="col-lg-6 col-md-12 col-sm-6">
+							<a href="mailto:example@email.com" class="d-flex align-items-center contact"
+								target="_blank">
+								<img src="images/email-msg.gif" alt="Phone Book Icon" loading="lazy" />
+								<div class="contact-deitails">
+									<h5>example@email.com</h5>
+									<p>Need Help? Get in Touch!</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-6 col-md-12 col-sm-6">
+							<a href="https://www.google.com/maps/place/Sher-e-Bangla+Agricultural+University/@23.77153,90.3724903,17z/data=!3m1!4b1!4m6!3m5!1s0x3755c79414120f23:0xe9d08f498cb34b7e!8m2!3d23.7715251!4d90.3750652!16s%2Fm%2F02z6ll4?authuser=0&entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
+								class="d-flex align-items-center contact" target="_blank">
+								<img src="images/location.gif" alt="Phone Book Icon" loading="lazy" />
+								<div class="contact-deitails">
+									<h5>SAU, Sher-E-Bangla Nagar</h5>
+									<p>Dhaka-1207, Bangladesh</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-6">
+					<form action="">
+						<form action="">
+							<input type="url" placeholder="Enter E-mail" class="form-control" />
+							<input type="submit" value="Subscribe" class="btn" />
+						</form>
+					</form>
+				</div>
+			</section>
+			<section class="row footer-content-wrapper">
+				<div class="col-lg-3">
+					<a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="Brand Logo"
+							class="img-fluid" /></a>
+					<p>
+						DMarketing is a digital marketing company
+						specializing in creative strategies, SEO, social
+						media, and data-driven campaigns to help brands grow
+						and thrive online.
+					</p>
+					<ul class="d-flex align-items-center gap-2 footer-social">
+						<li>
+							<a href="" target="_blank"><img src="images/facebook.png" alt="" /></a>
+						</li>
+						<li>
+							<a href="" target="_blank"><img src="images/twitter.png" alt="" /></a>
+						</li>
+						<li>
+							<a href="" target="_blank"><img src="images/instagram.png" alt="" /></a>
+						</li>
+						<li>
+							<a href="" target="_blank"><img src="images/linkedin.png" alt="" /></a>
+						</li>
+						<li>
+							<a href="" target="_blank"><img src="images/youtube.png" alt="" /></a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-9">
+					<div class="row footer-content">
+						<div class="col-sm-4">
+							<h4>Services</h4>
+							<ul>
+								<li><a href="">SEO</a></li>
+								<li><a href="">Email Marketing</a></li>
+								<li>
+									<a href="">Social Media Marketing</a>
 								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="about.html"
-										>About Us</a
-									>
+								<li><a href="">Facebook Marketing</a></li>
+								<li><a href="">Marketing Strategy </a></li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<h4>Community</h4>
+							<ul>
+								<li><a href="blogs.html">Blog</a></li>
+								<li><a href="">Documentation</a></li>
+								<li><a href="">Facebook</a></li>
+								<li><a href="">Discord</a></li>
+								<li>
+									<a href="">LinkedIn</a>
 								</li>
-								<li class="nav-item dropdown">
-									<a class="nav-link" href="services.html">
-										Services
-									</a>
-									<i
-										class="fa-solid fa-angle-down"
-										data-bs-toggle="dropdown"
-									></i>
-									<ul class="dropdown-menu">
-										<li>
-											<a
-												class="dropdown-item"
-												href="service-detail.html"
-												>Service Detail</a
-											>
-										</li>
-										<li>
-											<a class="dropdown-item" href="#"
-												>Another action</a
-											>
-										</li>
-										<li>
-											<a class="dropdown-item" href="#"
-												>Something else here</a
-											>
-										</li>
-									</ul>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<h4>Quick Links</h4>
+							<ul>
+								<li><a href="About.html">About Us</a></li>
+								<li>
+									<a href="contact.html">Contact Us</a>
 								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="projects.html"
-										>Projects</a
-									>
+								<li>
+									<a href="testimonials.html">Testimonials</a>
 								</li>
-								<li class="nav-item">
-									<a href="blogs.html" class="nav-link"
-										>Blog</a
-									>
+								<li>
+									<a href="privacy-policy.html">Privacy Policy</a>
 								</li>
-								<li class="nav-item">
-									<a href="contact.html" class="nav-link"
-										>Contact Us</a
-									>
+								<li>
+									<a href="faqs.html">FAQs</a>
 								</li>
 							</ul>
 						</div>
 					</div>
 				</div>
-			</nav>
-		</header>
-
-		<!-- Projects Banner -->
-		<section class="hero-banner project-banner">
-			<div class="container">
-				<div class="row hero-banner-wrapper">
-					<div class="col-md-6">
-						<div class="hero-banner-display">
-							<img
-								src="images/project-banner.png"
-								class="mht-img"
-								alt="Hero Banner Image"
-								loading="lazy"
-							/>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="hero-banner-content">
-							<h1>Our Success Stories & Case Studies</h1>
-							<p>
-								Discover how DMarketing has helped businesses
-								grow with data-driven SEO strategies and
-								innovative digital marketing solutions. From
-								boosting search rankings to increasing
-								conversions, our case studies showcase real
-								results and proven success.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Projects -->
-		<section class="projects featured-projects">
-			<div class="container">
-				<div class="featured-projects-wrapper">
-					<div class="text-center featured-projects-title">
-						<h6>Projects</h6>
-						<h2>Case Studies</h2>
-					</div>
-					<div class="projects-content-wrapper projects-wrapper">
-						<div class="project-content-display">
-							<img
-								src="images/project1.jpg"
-								class="mht-img"
-								alt="Project Image"
-								loading="lazy"
-							/>
-							<div class="project-content">
-								<p>Search Engine Optimization</p>
-								<h6>Technical SEO Audit and Implementation</h6>
-							</div>
-						</div>
-						<div class="project-content-display">
-							<img
-								src="images/project2.jpg"
-								class="mht-img"
-								alt="Project Image"
-								loading="lazy"
-							/>
-							<div class="project-content">
-								<p>Content Marketing</p>
-								<h6>Blog Post Series for Niche Industry</h6>
-							</div>
-						</div>
-						<div class="project-content-display">
-							<img
-								src="images/project3.jpg"
-								class="mht-img"
-								alt="Project Image"
-								loading="lazy"
-							/>
-							<div class="project-content">
-								<p>Social Media Marketing</p>
-								<h6>LinkedIn Thought Leadership Campaign</h6>
-							</div>
-						</div>
-						<div class="project-content-display">
-							<img
-								src="images/project4.jpg"
-								class="mht-img"
-								alt="Project Image"
-								loading="lazy"
-							/>
-							<div class="project-content">
-								<p>Pay-Per-Click</p>
-								<h6>
-									Google Ads Campaign for E-commerce Store
-								</h6>
-							</div>
-						</div>
-						<div class="project-content-display">
-							<img
-								src="images/project5.jpg"
-								class="mht-img"
-								alt="Project Image"
-								loading="lazy"
-							/>
-							<div class="project-content">
-								<p>Email Marketing</p>
-								<h6>
-									Email Performance Analysis and Reporting
-								</h6>
-							</div>
-						</div>
-						<div class="project-content-display">
-							<img
-								src="images/project6.jpg"
-								class="mht-img"
-								alt="Project Image"
-								loading="lazy"
-							/>
-							<div class="project-content">
-								<p>Analytics & Reporting</p>
-								<h6>
-									Google Analytics 4 Implementation and
-									Reporting
-								</h6>
-							</div>
-						</div>
-						<div class="project-content-display">
-							<img
-								src="images/project7.jpg"
-								class="mht-img"
-								alt="Project Image"
-								loading="lazy"
-							/>
-							<div class="project-content">
-								<p>Pay-Per-Click</p>
-								<h6>
-									Google Ads Campaign for E-commerce Store
-								</h6>
-							</div>
-						</div>
-						<div class="project-content-display">
-							<img
-								src="images/project8.jpg"
-								class="mht-img"
-								alt="Project Image"
-								loading="lazy"
-							/>
-							<div class="project-content">
-								<p>Email Marketing</p>
-								<h6>
-									Email Performance Analysis and Reporting
-								</h6>
-							</div>
-						</div>
-						<div class="project-content-display">
-							<img
-								src="images/project9.jpg"
-								class="mht-img"
-								alt="Project Image"
-								loading="lazy"
-							/>
-							<div class="project-content">
-								<p>Analytics & Reporting</p>
-								<h6>
-									Google Analytics 4 Implementation and
-									Reporting
-								</h6>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Footer -->
-		<footer>
-			<div class="container">
-				<section class="row align-items-center newsletter">
-					<div class="col-lg-7 col-md-6">
-						<div class="row contact-wrapper">
-							<div class="col-lg-6 col-md-12 col-sm-6">
-								<a
-									href="mailto:example@email.com"
-									class="d-flex align-items-center contact"
-									target="_blank"
-								>
-									<img
-										src="images/email-msg.gif"
-										alt="Phone Book Icon"
-										loading="lazy"
-									/>
-									<div class="contact-deitails">
-										<h5>example@email.com</h5>
-										<p>Need Help? Get in Touch!</p>
-									</div>
-								</a>
-							</div>
-							<div class="col-lg-6 col-md-12 col-sm-6">
-								<a
-									href="https://www.google.com/maps/place/Sher-e-Bangla+Agricultural+University/@23.77153,90.3724903,17z/data=!3m1!4b1!4m6!3m5!1s0x3755c79414120f23:0xe9d08f498cb34b7e!8m2!3d23.7715251!4d90.3750652!16s%2Fm%2F02z6ll4?authuser=0&entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
-									class="d-flex align-items-center contact"
-									target="_blank"
-								>
-									<img
-										src="images/location.gif"
-										alt="Phone Book Icon"
-										loading="lazy"
-									/>
-									<div class="contact-deitails">
-										<h5>SAU, Sher-E-Bangla Nagar</h5>
-										<p>Dhaka-1207, Bangladesh</p>
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-5 col-md-6">
-						<form action="">
-							<form action="">
-								<input
-									type="url"
-									placeholder="Enter E-mail"
-									class="form-control"
-								/>
-								<input
-									type="submit"
-									value="Subscribe"
-									class="btn"
-								/>
-							</form>
-						</form>
-					</div>
-				</section>
-				<section class="row footer-content-wrapper">
-					<div class="col-lg-3">
-						<a href="index.html" class="navbar-brand"
-							><img
-								src="images/logo.png"
-								alt="Brand Logo"
-								class="img-fluid"
-						/></a>
-						<p>
-							DMarketing is a digital marketing company
-							specializing in creative strategies, SEO, social
-							media, and data-driven campaigns to help brands grow
-							and thrive online.
-						</p>
-						<ul
-							class="d-flex align-items-center gap-2 footer-social"
-						>
-							<li>
-								<a href="" target="_blank"
-									><img src="images/facebook.png" alt=""
-								/></a>
-							</li>
-							<li>
-								<a href="" target="_blank"
-									><img src="images/twitter.png" alt=""
-								/></a>
-							</li>
-							<li>
-								<a href="" target="_blank"
-									><img src="images/instagram.png" alt=""
-								/></a>
-							</li>
-							<li>
-								<a href="" target="_blank"
-									><img src="images/linkedin.png" alt=""
-								/></a>
-							</li>
-							<li>
-								<a href="" target="_blank"
-									><img src="images/youtube.png" alt=""
-								/></a>
-							</li>
-						</ul>
-					</div>
-					<div class="col-lg-9">
-						<div class="row footer-content">
-							<div class="col-sm-4">
-								<h4>Services</h4>
-								<ul>
-									<li><a href="">SEO</a></li>
-									<li><a href="">Email Marketing</a></li>
-									<li>
-										<a href="">Social Media Marketing</a>
-									</li>
-									<li><a href="">Facebook Marketing</a></li>
-									<li><a href="">Marketing Strategy </a></li>
-								</ul>
-							</div>
-							<div class="col-sm-4">
-								<h4>Community</h4>
-								<ul>
-									<li><a href="blogs.html">Blog</a></li>
-									<li><a href="">Documentation</a></li>
-									<li><a href="">Facebook</a></li>
-									<li><a href="">Discord</a></li>
-									<li>
-										<a href="">LinkedIn</a>
-									</li>
-								</ul>
-							</div>
-							<div class="col-sm-4">
-								<h4>Quick Links</h4>
-								<ul>
-									<li><a href="About.html">About Us</a></li>
-									<li>
-										<a href="contact.html">Contact Us</a>
-									</li>
-									<li>
-										<a href="testimonials.html"
-											>Testimonials</a
-										>
-									</li>
-									<li>
-										<a href="privacy-policy.html"
-											>Privacy Policy</a
-										>
-									</li>
-									<li>
-										<a href="faqs.html">FAQs</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
-			<section class="copyright">
-				<div
-					class="d-flex justify-content-between align-items-center container"
-				>
-					<p>© 2025 DMarketing. All rights reseved.</p>
-					<p>
-						Design & Develop by
-						<a href="https://fivepflow.com/" target="_blank"
-							>FiveP Flow</a
-						>
-					</p>
-				</div>
 			</section>
-		</footer>
+		</div>
+		<section class="copyright">
+			<div class="d-flex justify-content-between align-items-center container">
+				<p>© 2025 DMarketing. All rights reseved.</p>
+				<p>
+					Design & Develop by
+					<a href="https://fivepflow.com/" target="_blank">FiveP Flow</a>
+				</p>
+			</div>
+		</section>
+	</footer>
 
-		<!-- JQuery Script -->
-		<script src="js/jquery-3.7.1.min.js"></script>
-		<!-- Bootstrap Script -->
-		<script src="js/bootstrap.bundle.min.js"></script>
-		<!-- Main Script -->
-		<script src="js/script.js"></script>
-	</body>
+	<!-- JQuery Script -->
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<!-- Bootstrap Script -->
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<!-- AOS Script -->
+	<script src="js/aos.min.js"></script>
+	<!-- Main Script -->
+	<script src="js/script.js"></script>
+</body>
+
 </html>
